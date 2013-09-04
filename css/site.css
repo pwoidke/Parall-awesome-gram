@@ -88,7 +88,7 @@ header {
 /* Layout */
 section {
   display: block; 
-  width: 1024px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto; }
 
@@ -98,6 +98,18 @@ article {
 }
 article img {
   width: 300px;
+}
+
+article .alt {
+    background-color: rgba(200, 200, 200, .5);
+    display: inline;
+    position: absolute;
+    text-align: left;
+    padding: 0 10px;
+    left: 0;
+    top: 155px;
+    width:100%;
+    overflow: hidden;
 }
   
 footer {
