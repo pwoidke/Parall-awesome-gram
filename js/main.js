@@ -12,11 +12,11 @@ $(document).ready(function(){
                 rotate3d: '0,0,1,0deg'
             });
             $(this).parent().parent().stop().transition({
-                translate: '-' + ($(this).width() / 12 ) + 'px, -' + ($(this).width() * 0.24) + 'px',
+                translate: '-' + (degrees * 1.65) + 'px, -' + (degrees * 4.8) + 'px',
                 rotate3d: '0,0,1,0deg'
             });
-            $(this).children('.alt').animate({
-                top: '130px'
+            $(this).children('.alt').stop().animate({
+                bottom: parseInt($('.alt').parent().css('height'),10) - parseInt($('.maskew').css('height'),10) + 'px'
             });
             $(this).addClass('square');
         },
@@ -25,11 +25,11 @@ $(document).ready(function(){
                 rotate3d: '0,0,1,-' + degrees + 'deg'
             });
             $(this).parent().parent().stop().transition({
-                translate: '-' + ($(this).width() / 12 ) + 'px, -' + ($(this).width() * 0.24) + 'px',
+                translate: '-' + (degrees * 1.65) + 'px, -' + (degrees * 4.8) + 'px',
                 rotate3d: '0,0,1,' + degrees + 'deg'
             });
-            $(this).children('.alt').animate({
-                top: '155px'
+            $(this).children('.alt').stop().animate({
+                bottom: '0px'
             });
             $(this).removeClass('square');
         }

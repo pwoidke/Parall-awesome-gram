@@ -107,7 +107,7 @@ article .alt {
     text-align: left;
     padding: 0 10px;
     left: 0;
-    top: 155px;
+    bottom:0;
     width:100%;
     overflow: hidden;
 }
