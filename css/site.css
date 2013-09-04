@@ -96,6 +96,9 @@ article {
   display: inline-block;
   background-color: green;
 }
+article img {
+  width: 300px;
+}
   
 footer {
   display: block;

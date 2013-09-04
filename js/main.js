@@ -10,7 +10,7 @@ $(document).ready(function(){
                 rotate3d: '0,0,1,0deg'
             });
             $(this).parent().parent().stop().transition({
-                translate: '0px, -97px',
+                translate: '0px, -' + ($(this).width() * 0.24) + 'px',
                 rotate3d: '0,0,1,0deg'
             });
             $(this).addClass('square');
@@ -20,7 +20,7 @@ $(document).ready(function(){
                 rotate3d: '0,0,1,-15deg'
             });
             $(this).parent().parent().stop().transition({
-                translate: '0px, -97px',
+                translate: '0px, -' + ($(this).width() * 0.24) + 'px',
                 rotate3d: '0,0,1,15deg'
             });
             $(this).removeClass('square');
