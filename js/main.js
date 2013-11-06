@@ -5,7 +5,7 @@ $(document).ready(function(){
     for(i = 0, l = items.length; i < l; i++){
         new Maskew(items[i], degrees, { touch: false, anchor: 'bottom', showElement: 'inline-block' });
     }
-    //new Maskew (document.getElementsByTagName('nav')[0], degrees, { touch: false, anchor: 'bottom', showElement: 'inline-block' });
+    //new Maskew (document.getElementById('navButton'), degrees, { touch: false, anchor: 'bottom', showElement: 'inline-block' });
     
     $('article').hover(
         function(){
@@ -37,4 +37,24 @@ $(document).ready(function(){
     );
     
     $('article').trigger('mouseleave');
+    
+    $('#navButton').click(function(){
+        if ($('nav').hasClass('closed'))
+        {
+            $('nav').animate({
+                    height: "100px"
+                });
+            $('nav').removeClass('closed');
+            $('nav').addClass('open');
+        }
+        else if ($('nav').hasClass('open'))
+        {
+            $('nav').animate({
+                    height: "0"
+                });
+            $('nav').removeClass('open');
+            $('nav').addClass('closed');
+        }
+    });
+    
 });
