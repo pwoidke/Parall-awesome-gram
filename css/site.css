@@ -6,11 +6,13 @@ button,
 input,
 select,
 textarea {
-  color: #222; }
+  color: #222;
+}
 
 body {
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -19,11 +21,13 @@ body {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /*
  * A better looking default horizontal rule
@@ -34,13 +38,15 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 img {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*
  * Remove default fieldset styles.
@@ -48,13 +54,15 @@ img {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
 /* ==========================================================================
    Chrome Frame prompt
@@ -63,34 +71,55 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #dedede;
-  padding: 0.2em 0; }
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Main page styles
    ========================================================================== */
 body {
   font-size: 100%;
-  color: #dedede; }
+  color: #dedede;
+}
 
 .container {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 /* Header */
 header {
   display: block;
-  text-align: center; }
-  header hr {
-    background-color: #FF3D0D;
-    height: 30px; }
+  text-align: center;
+}
+header hr {
+  background-color: #FF3D0D;
+  height: 30px;
+}
+
+/* Navigation */
+nav {
+  width: 50px;
+  height: 40px;
+  margin: 50px;
+}
+nav #links {
+  display: none;
+}
+nav #bars hr {
+  margin: 8px 0;
+  background-color: #fa4816;
+  height: 7px;
+}
 
 /* Layout */
 section {
-  display: block; 
+  display: block;
   text-align: center;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 article {
   display: inline-block;
@@ -99,37 +128,39 @@ article {
 article img {
   width: 300px;
 }
-
 article .alt {
-    background-color: rgba(200, 200, 200, .5);
-    display: inline;
-    position: absolute;
-    text-align: left;
-    padding: 0 10px;
-    left: 0;
-    bottom:0;
-    width:100%;
-    overflow: hidden;
+  background-color: rgba(200, 200, 200, 0.5);
+  display: inline;
+  position: absolute;
+  text-align: left;
+  padding: 0 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
 }
-  
+
 footer {
   display: block;
-  background-color:#FF3D0D;
+  background-color: #FF3D0D;
   clear: both;
   min-height: 20px;
   position: relative;
   top: 20px;
   text-align: center;
-  padding: 5px 0; }
+  padding: 5px 0;
+}
 
 /* Text */
 h1, h2, h3 {
   font-family: 'Noto Serif', serif, Verdana, sans-serif;
-  color: #000; }
+  color: #000;
+}
 
 h4 {
   font-family: 'Noto Serif', serif, Verdana, sans-serif;
-  color: #dedede; }
+  color: #dedede;
+}
 
 .title {
   background-color: #0c341e;
@@ -140,12 +171,14 @@ h4 {
   padding: 10px 0 10px 30px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 p {
   font-family: 'Noto Serif', serif, Verdana, sans-serif;
   font-size: 1.1em/1.7em;
-  color: #dedede; }
+  color: #dedede;
+}
 
 a {
   color: #b4b5ab;
@@ -154,18 +187,22 @@ a {
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
-  border-bottom: 1px dotted #dedede; }
-  a img {
-    border: none;
-    text-decoration: none; }
-  a:hover {
-    color: #fff350;
-    border-bottom: 1px dotted #fff350; }
+  border-bottom: 1px dotted #dedede;
+}
+a img {
+  border: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff350;
+  border-bottom: 1px dotted #fff350;
+}
 
 /* Tables */
 tr, td {
   font: normal 14px "trebuchet ms", futura, helvetica, "times new roman", times, serif;
-  color: #dedede; }
+  color: #dedede;
+}
 
 th {
   background-color: #0c341e;
@@ -176,7 +213,8 @@ th {
   padding: 5px 0 5px 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* ==========================================================================
    Helper classes
@@ -189,19 +227,23 @@ th {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-  *text-indent: -9999px; }
-  .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%; }
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 .hidden {
   display: none !important;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -214,7 +256,8 @@ th {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
@@ -227,13 +270,15 @@ th {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
  * Clearfix: contain floats
@@ -250,17 +295,20 @@ th {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {
-  *zoom: 1; }
+  *zoom: 1;
+}
 
 /* ==========================================================================
    Print styles.
@@ -272,16 +320,20 @@ th {
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
 
   a, a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
 
   /*
    * Don't show links for images, or javascript/internal links
@@ -289,32 +341,40 @@ th {
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: ""; }
+    content: "";
+  }
 
   pre, blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   thead {
     display: table-header-group;
-    /* h5bp.com/t */ }
+    /* h5bp.com/t */
+  }
 
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+  }
 
   @page {
-    margin: 0.5cm; }
-
+    margin: 0.5cm;
+  }
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
   h2,
   h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid;
+  }
+}

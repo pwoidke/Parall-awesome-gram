@@ -5,6 +5,7 @@ $(document).ready(function(){
     for(i = 0, l = items.length; i < l; i++){
         new Maskew(items[i], degrees, { touch: false, anchor: 'bottom', showElement: 'inline-block' });
     }
+    //new Maskew (document.getElementsByTagName('nav')[0], degrees, { touch: false, anchor: 'bottom', showElement: 'inline-block' });
     
     $('article').hover(
         function(){
@@ -35,5 +36,5 @@ $(document).ready(function(){
         }
     );
     
-    $('article').trigger('mouseleave'); 
+    $('article').trigger('mouseleave');
 });

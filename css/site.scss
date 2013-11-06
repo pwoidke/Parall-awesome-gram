@@ -9,24 +9,23 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-$contentWidth: 1024px;
-$titleText: #fff350;
+
+$titleText: #FA4816;
 $bodyText: #DEDEDE;
 $linkText: #B4B5AB;
 
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html,
 button,
 input,
 select,
-textarea{
+textarea {
   color: #222;
 }
 
-body{
+body {
   font-size: 1em;
   line-height: 1.4;
 }
@@ -36,13 +35,12 @@ body{
  * These selection declarations have to be separate.
  * Customize the background color to match your design.
  */
-
-::-moz-selection{
+::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-::selection{
+::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
@@ -50,8 +48,7 @@ body{
 /*
  * A better looking default horizontal rule
  */
-
-hr{
+hr {
   display: block;
   height: 1px;
   border: 0;
@@ -63,16 +60,14 @@ hr{
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-
-img{
+img {
   vertical-align: middle;
 }
 
 /*
  * Remove default fieldset styles.
  */
-
-fieldset{
+fieldset {
   border: 0;
   margin: 0;
   padding: 0;
@@ -81,163 +76,186 @@ fieldset{
 /*
  * Allow only vertical resizing of textareas.
  */
-
-textarea{
+textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-
-.chromeframe{
+.chromeframe {
   margin: 0.2em 0;
   background: #ccc;
-  color: $bodyText;
+  color: #dedede;
   padding: 0.2em 0;
 }
-
 
 /* ==========================================================================
    Main page styles
    ========================================================================== */
-
-
-body{
-  font-size:100%;
-  color: $bodyText;
+body {
+  font-size: 100%;
+  color: #dedede;
 }
 
-.container{
-  display:block;
-  width: $contentWidth;
-  margin-left:auto;
-  margin-right:auto;
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Header */
-header{
-  display:block;
-  width: $contentWidth;
-  text-align:center;
-  hr{
-    color: #f00;
-    background-color: #f00;
-    height: 20px;
+header {
+  display: block;
+  text-align: center;
+  hr {
+    background-color: #FF3D0D;
+    height: 30px;
   }
 }
 
+/* Navigation */
+nav {
+    width: 50px;
+    height: 40px;
+    margin: 50px;
+    #links {
+        display: none;
+    }
+    #bars hr {
+        margin: 8px 0;
+        background-color: $titleText;
+        height: 7px;
+    }
+}
 
 /* Layout */
-section{
+section {
+  display: block; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  display: inline-block;
+  background-color: green;
+  img {
+    width: 300px;
+  }
+  .alt {
+    background-color: rgba(200, 200, 200, .5);
+    display: inline;
+    position: absolute;
+    text-align: left;
+    padding: 0 10px;
+    left: 0;
+    bottom:0;
+    width:100%;
+    overflow: hidden;
+  }
+}
+  
+footer {
   display: block;
-}
-
-.centerCol{
-  clear:both;
-  width: $contentWidth;
-}
-
-footer{
-  display:block;
-  width: $contentWidth;
-  clear:both;
-  min-height:30px;
-  position:relative;
-  top:20px;
-  text-align:center;
-  padding:5px 0;
+  background-color:#FF3D0D;
+  clear: both;
+  min-height: 20px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  padding: 5px 0;
 }
 
 /* Text */
-h1, h2, h3{
-  @include main-font;
-  color: $titleText;
+h1, h2, h3 {
+  font-family: 'Noto Serif', serif, Verdana, sans-serif;
+  color: #000;
 }
 
-h4{
-  @include main-font;
-  color: $bodyText;
+h4 {
+  font-family: 'Noto Serif', serif, Verdana, sans-serif;
+  color: #dedede;
 }
 
-.title{
-  background-color:#0c341e;
-  width:100%;
-  @include main-font;
-  color: $bodyText;
-  text-align:left;
+.title {
+  background-color: #0c341e;
+  width: 100%;
+  font-family: 'Noto Serif', serif, Verdana, sans-serif;
+  color: #dedede;
+  text-align: left;
   padding: 10px 0 10px 30px;
-  @include border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-p{
-  @include main-font;
+p {
+  font-family: 'Noto Serif', serif, Verdana, sans-serif;
   font-size: 1.1em/1.7em;
-  color: $bodyText;
+  color: #dedede;
 }
 
-a{
-  color: $linkText;
-  @include main-font;
-  text-decoration:none;
+a {
+  color: #b4b5ab;
+  font-family: 'Noto Serif', serif, Verdana, sans-serif;
+  text-decoration: none;
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
-  border-bottom: 1px dotted $bodyText;
-  img{
+  border-bottom: 1px dotted #dedede;
+  img {
     border: none;
     text-decoration: none;
   }
-  &:hover{
-    color: $titleText;
-    border-bottom: 1px dotted $titleText;
+  &:hover {
+    color: #fff350;
+    border-bottom: 1px dotted #fff350;
   }
 }
 
 /* Tables */
-tr, td{
-  @include table-font;
-  color: $bodyText;
+tr, td {
+  font: normal 14px "trebuchet ms", futura, helvetica, "times new roman", times, serif;
+  color: #dedede;
 }
 
-th{
-  background-color:#0c341e;
-  width:100%;
-  @include table-font;
-  color: $bodyText;
-  text-align:left;
+th {
+  background-color: #0c341e;
+  width: 100%;
+  font: normal 14px "trebuchet ms", futura, helvetica, "times new roman", times, serif;
+  color: #dedede;
+  text-align: left;
   padding: 5px 0 5px 10px;
-  @include border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Image replacement
  */
-
-.ir{
+.ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
   *text-indent: -9999px;
-  &:before{
+}
+  .ir:before {
     content: "";
     display: block;
     width: 0;
     height: 150%;
-  }
 }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-
-.hidden{
+.hidden {
   display: none !important;
   visibility: hidden;
 }
@@ -245,8 +263,7 @@ th{
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-
-.visuallyhidden{
+.visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -261,9 +278,8 @@ th{
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-
 .visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus{
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -275,8 +291,7 @@ th{
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-
-.invisible{
+.invisible {
   visibility: hidden;
 }
 
@@ -291,13 +306,14 @@ th{
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
-.clearfix:before, .clearfix:after{
-  content: " "; /* 1 */
-  display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
-.clearfix:after{
+.clearfix:after {
   clear: both;
 }
 
@@ -305,8 +321,7 @@ th{
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-
-.clearfix{
+.clearfix {
   *zoom: 1;
 }
 
@@ -314,68 +329,66 @@ th{
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-
-@media print{
+@media print {
   * {
     background: transparent !important;
-    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
-  }
+}
 
-  a, a:visited{
+  a, a:visited {
     text-decoration: underline;
-  }
+}
 
-  a[href]:after{
+  a[href]:after {
     content: " (" attr(href) ")";
-  }
+}
 
-  abbr[title]:after{
+  abbr[title]:after {
     content: " (" attr(title) ")";
-  }
+}
 
-/*
- * Don't show links for images, or javascript/internal links
- */
-
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
   .ir a:after,
   a[href^="javascript:"]:after,
-  a[href^="#"]:after{
+  a[href^="#"]:after {
     content: "";
-  }
+}
 
-  pre, blockquote{
+  pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
-  }
+}
 
-  thead{
-    display: table-header-group; /* h5bp.com/t */
-  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+}
 
   tr,
-  img{
+  img {
     page-break-inside: avoid;
-  }
+}
 
-  img{
+  img {
     max-width: 100% !important;
-  }
+}
 
-  @page{
+  @page {
     margin: 0.5cm;
-  }
+}
 
   p,
   h2,
-  h3{
+  h3 {
     orphans: 3;
     widows: 3;
-  }
+}
 
   h2,
-  h3{
-    page-break-after: avoid;
-  }
-}
+  h3 {
+    page-break-after: avoid; } }
