@@ -77,12 +77,15 @@ textarea {
 /* ==========================================================================
    Main page styles
    ========================================================================== */
-body {
+#container {
   font-size: 100%;
   color: #dedede;
+  background-color: #BBB;
+  border-color: #666666;
+  border: 0;
 }
 
-#container {
+#content {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -101,6 +104,7 @@ header hr {
 /* Navigation */
 nav {
   background-color: #666666;
+  width: 100%;
   height: 0;
   overflow: hidden;
 }
@@ -116,6 +120,7 @@ nav .links {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 1000;
 }
 #navButton hr {
   margin: 8px 0;

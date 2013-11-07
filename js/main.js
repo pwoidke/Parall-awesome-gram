@@ -1,5 +1,9 @@
 var degrees = 15;
 
+/*	Define Click Event for Mobile */
+if( 'ontouchstart' in window ){ var click = 'touchstart'; }
+else { var click = 'click'; }
+
 $(document).ready(function(){
     var items = document.getElementsByTagName('article')
     for(i = 0, l = items.length; i < l; i++){
@@ -42,16 +46,28 @@ $(document).ready(function(){
         if ($('nav').hasClass('closed'))
         {
             $('nav').animate({
-                    height: "100px"
-                });
+                height: "100px"
+            });
+            $('#content').animate({
+                marginTop: '100px',
+            });
+            $('#container').animate({
+                border: '50px solid red',
+            });
             $('nav').removeClass('closed');
             $('nav').addClass('open');
         }
         else if ($('nav').hasClass('open'))
         {
             $('nav').animate({
-                    height: "0"
-                });
+                height: "0"
+            });
+            $('#content').animate({
+                marginTop: '0'
+            });
+            $('#container').animate({
+                border: '0',
+            });
             $('nav').removeClass('open');
             $('nav').addClass('closed');
         }
